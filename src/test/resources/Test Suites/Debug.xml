@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Debug" verbose="1">
 
@@ -7,6 +7,10 @@
 		<classes>
 			<class name="com.herokuapp.theinternet.ExceptionsTests">
 				<methods>
+					<include name="noSuchElementExceptionTest"></include>
+					<include name="elementNotInteractableTest"></include>
+					<include name="invalidElementStateExceptionTest"></include>
+					<include name="staleElementReferenceExceptionTest"></include>
 					<include name="timeoutExceptionTest"></include>
 				</methods>
 			</class>
